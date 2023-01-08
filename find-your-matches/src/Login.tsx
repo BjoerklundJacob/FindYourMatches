@@ -16,12 +16,12 @@ const Login: FC = () => {
     return (
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh'}}>
             <Box sx={{ margin: '1rem', maxWidth: '25rem', maxHeight: '15rem' }}>
-                <Stack>
+                <Stack spacing={4}>
                     <TextField label="Name" variant="outlined" onKeyDown={(e) => {
                         if(e.key == 'Enter')
                             handleLogin()
                     }} />
-                    <Button onClick={handleLogin}>Login</Button>
+                    <Button variant="contained" onClick={handleLogin}>Login</Button>
                 </Stack>
             </Box>
         </div>
