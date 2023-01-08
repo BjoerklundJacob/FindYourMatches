@@ -9,6 +9,7 @@ import {
 import AuthenticatedRoute from './AuthenticatedRoute';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ResultCarousel from './ResultCarousel';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
     path: "/Login",
     element: <Login />,
   },
+  {
+    path: "/Results",
+    element: <ResultCarousel FirstUserList={[{name: "Bob", description: 'He does'}]} SecondUserList={[{name: "Bob", description: 'He does'}]} />,
+  }
 ])
 
 root.render(
