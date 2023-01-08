@@ -5,6 +5,7 @@
             "command": "npm start",
             "name": "Run npm start",
             "request": "launch",
+            "cwd": "${workspaceFolder}/find-your-matches",
             "type": "node-terminal"
         }
     ]

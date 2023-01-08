@@ -1,10 +1,9 @@
 import React from 'react';
+import Swiper from './Swiper';
 
 function App() {
   return (
-    <div>
-      Hello World
-    </div>
+    <Swiper/>
   );
 }
 
